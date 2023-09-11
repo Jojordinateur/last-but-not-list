@@ -1,6 +1,9 @@
 <div (keydown.enter)="addInList()">
     <div class="haut-de-page">
-        <button class="home" (click)="comeBackHome()">Home</button>
+        <div class="actions">
+            <button class="home" (click)="comeBackHome()">Home</button>
+            <button class="clear" (click)="clearList()">Nettoyer</button>
+        </div>
         <p>{{name}}</p>
     </div>
     
@@ -8,8 +11,7 @@
         <ul>
             <li *ngFor="let elt of list">{{elt}}</li>
         </ul>
-        <input [(ngModel)]="nouvelObjet" placeholder="Nouvel Item" />
-        <button (click)="addInList()" >Ajouter à ma liste</button>
-        <button (click)="clearList()">Nettoyer</button>
+        <input class="nouvel-item" [(ngModel)]="nouvelObjet" placeholder="Nouvel Item" />
+        <button class="ajouter" (click)="addInList()" >Ajouter à ma liste</button>
     </div>
 </div>

@@ -1,15 +1,46 @@
 .haut-de-page{
 
-    .home {
+    .actions {
+        flex-direction:row;
+        .home {
+            margin:5px;
+                width: 100px;
+                height: 100px;
+                cursor: pointer;
+                font-size: large;
+        }
+        .clear {
+            margin: 5px;
             width: 100px;
-            height: 100px;
-            cursor: pointer;
-            font-size: large;
+                height: 100px;
+                cursor: pointer;
+                font-size: large;
+            background-color: rgb(252, 130, 130);
+        }
+
     }
+
+    
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: larger;
+}
+
+.body {
     font-size: large;
+    .nouvel-item {
+        margin: 5px;
+        height: 50px;
+        font-size: large;
+        
+    }
+    .ajouter {
+        margin: 5px;
+        font-size: large;
+        height: 56px;
+        background-color: rgb(69, 206, 69);
+    }
 }
