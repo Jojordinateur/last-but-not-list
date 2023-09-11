@@ -26,7 +26,7 @@ export class DetailComponent implements OnInit {
   }
 
   private getTheList(): void {
-    this.list = JSON.parse(localStorage.getItem(this.name) ?? '');
+    this.list = localStorage.getItem(this.name) != null ? JSON.parse(localStorage.getItem(this.name) ?? '') : [];
   }
 
   public addInList(): void {
@@ -34,7 +34,13 @@ export class DetailComponent implements OnInit {
       this.list = [...this.list, this.nouvelObjet];
       localStorage.setItem(this.name, JSON.stringify(this.list));
       this.getTheList();
+      this.nouvelObjet = "";
     }
+  }
+
+  public clearList(): void {
+    localStorage.removeItem(this.name);
+    this.list = [];
   }
 
 }
