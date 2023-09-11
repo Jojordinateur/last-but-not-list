@@ -1,0 +1,15 @@
+.haut-de-page{
+
+    .home {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            font-size: large;
+    }
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}

@@ -1,0 +1,47 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .pastel-color {
+
+        &-common {
+            max-width: 400px;
+            max-height: 400px;
+            min-height: 200px;
+            cursor: pointer;
+            font-size: large;
+        }
+
+        &-1{
+            @extend .pastel-color-common;
+            background-color: #FDCB58; /* Couleur pastel 1 */
+        }
+
+        &-2{
+            @extend .pastel-color-common;
+            background-color: #A2DFFF; /* Couleur pastel 2 */
+        }
+
+        &-3{
+            @extend .pastel-color-common;
+            background-color: #FFA0A0; /* Couleur pastel 3 */
+        }
+
+        &-4{
+            @extend .pastel-color-common;
+            background-color: #C5FFBA; /* Couleur pastel 4 */
+        }
+
+        &-5{
+            @extend .pastel-color-common;
+            background-color: #FFC3A0; /* Couleur pastel 5 */
+        }
+
+        &-6{
+            @extend .pastel-color-common;
+            background-color: #C3B9FF; /* Couleur pastel 6 */
+        }
+      }
+  }
+

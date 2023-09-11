@@ -1,1 +1,12 @@
-<p>detail works!</p>
+<div class="haut-de-page">
+    <button class="home" (click)="comeBackHome()">Home</button>
+    <p>{{name}}</p>
+</div>
+
+<div class="body">
+    <ul>
+        <li *ngFor="let elt of list">{{elt}}</li>
+    </ul>
+    <input [(ngModel)]="nouvelObjet" placeholder="Nouvel Item" />
+    <button (click)="addInList()">Ajouter à ma liste</button>
+</div>
